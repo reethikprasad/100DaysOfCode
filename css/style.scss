@@ -481,6 +481,10 @@ a {
 // FOR SMART PHONE
 @media (max-width: 600px) {
   // Main Header
+  .phone {
+    width: auto;
+    height: 345;
+  }
   #main-header {
     padding: 10vw 3vw 8vw;
 
