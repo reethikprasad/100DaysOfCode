@@ -63,7 +63,7 @@ a {
         transition: color 0.5s;
 
         &:hover {
-          color: #1d9ceb;
+          color: #e4205d;
         }
       }
 
@@ -74,14 +74,39 @@ a {
         transition: color 0.5s;
 
         &:hover {
-          color: #17bf63;
+          color: #e4205d;
         }
+      }
+
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
       }
 
       a {
         display: block;
         color: #ffffff;
         text-decoration: none;
+        position: relative;
+      }
+      #space {
+        display: flex;
+        position: relative;
+        display: inline-block;
+      }
+
+      #qwe {
+        padding: 60px 0;
+        text-align: center;
+        margin: 0 20px;
+        color: #fffffe;
+        cursor: pointer;
+        &:hover {
+          color: #e4205d;
+
+          transition: 0.05s ease-out;
+        }
       }
     }
 
@@ -112,11 +137,17 @@ a {
       }
     }
   }
-
+  .cet {
+    text-align: center;
+    color: lighten(white, 10);
+    font-size: 24px;
+    max-width: 800px;
+    margin: auto;
+  }
   .about-me {
     margin: 0 8vw 3vw;
     font-size: 1.4vw;
-    font-weight: 300;
+    font-weight: 800;
   }
 
   #navbar {
@@ -177,7 +208,7 @@ a {
         color: #0d5c30;
         transition: color 0.5s, text-shadow 0.5s;
         &:hover {
-          color: #7f5af0;
+          color: #fffffe;
         }
       }
       .a-current-green-light {
@@ -199,7 +230,7 @@ a {
         color: #ff5470;
 
         &:hover {
-          color: #7f5af0;
+          color: #ffffff;
         }
         #blinks_me {
           animation: blinker 1s linear infinite;
@@ -305,7 +336,7 @@ a {
       transition: all 0.5s ease;
 
       &:hover {
-        box-shadow: 0 0 1vw #1da1f2;
+        box-shadow: 0 0 1vw #e4205d;
         cursor: pointer;
       }
 
@@ -505,7 +536,6 @@ a {
       .days-link {
         .a-current-green-light {
           color: #e4205d;
-          text-shadow: 0 0 20px #e4205d;
         }
       }
 
@@ -567,7 +597,7 @@ a {
       grid-template-columns: 1fr;
 
       .project {
-        border: solid #1da1f2 2px;
+        border-bottom: solid #e4205d 5px;
         padding: 4vw;
 
         .project-title {
@@ -580,4 +610,37 @@ a {
       }
     }
   }
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: 4rem;
+    right: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
+.foot {
+  text-align: center;
 }
